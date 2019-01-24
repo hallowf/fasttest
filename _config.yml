@@ -21,3 +21,5 @@ redcarpet:
     - fenced_code_blocks
 gems:
     - jekyll-sitemap
+
+theme: jekyll-theme-cayman
