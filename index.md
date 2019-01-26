@@ -26,8 +26,8 @@ It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's fr
 To use, first [*login* or *sign up* here](https://fasttest.auth.eu-west-1.amazoncognito.com/login?response_type=code&client_id=60uit0kj2hdie09n13v6fpiqd9&redirect_uri=https://938jss4tqd.execute-api.eu-west-1.amazonaws.com/prod/login/), then just run:
 
 ```bash
-$ npm install fasttest [-g if you need it]
-$ fasttest login --username <your username> --password <your password>
+$ npm install fasttest -g
+$ fasttest login --username <user> --password <pass>
 $ fasttest testfile.js
 ```
 
