@@ -46,4 +46,3 @@ Notice that you don't have to type "async". This is not an accident. fasttest.io
 
 <hr>
 
-<small>&copy; 2019 <a href="https://frutal.pt">Fábio Santos</a></small>
