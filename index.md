@@ -3,7 +3,16 @@ layout: default
 title: Ghink
 ---
 
-# fasttest.io
+<div style="height:2em"></div>
+
+<style>
+@media screen and (max-width: 800px) {
+    #title {
+        font-size: 3em !important;
+    }
+}
+</style>
+<h1 id="title" style="text-align: center; font-size: 6em">fasttest.io</h1>
 
 <hr>
 
