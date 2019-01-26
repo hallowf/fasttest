@@ -12,6 +12,7 @@ title: fasttest.io
     }
 }
 </style>
+
 <h1 id="title" style="text-align: center; font-size: 6em">fasttest.io</h1>
 
 <hr>
@@ -19,6 +20,8 @@ title: fasttest.io
 fasttest.io is your ticket to faster, easier to write and cheaper functional tests. Run your tests in our JSDOM based browser. They are run in series so you can use the result from the previous test in the next one.
 
 Your tests are going to be really simple to write and also run extremely fast. You get to choose what region you want to run your tests from (coming soon)
+
+It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's free for now and when we consider we have the critical mass of users, you'll be able to use it on a pay-what-you-use basis.
 
 To use, just run
 
