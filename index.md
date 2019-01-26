@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ghink
+title: fasttest.io
 ---
 
 <div style="height:2em"></div>
@@ -16,7 +16,7 @@ title: Ghink
 
 <hr>
 
-Run your tests very fast by using our JSDOM-based driver.
+fasttest.io is your ticket to faster, easier to write and cheaper functional tests. Run your tests in our JSDOM based browser. They are run in series so you can use the result from the previous test in the next one.
 
 Your tests are going to be really simple to write and also run extremely fast. You get to choose what region you want to run your tests from (coming soon)
 
