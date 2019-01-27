@@ -30,8 +30,10 @@ To use, first [*login* or *sign up* here](https://fasttest.auth.eu-west-1.amazon
 ```bash
 $ npm install fasttest -g
 $ fasttest login --username <user> --password <pass>
-$ fasttest testfile.js
+$ fasttest testfile.js --baseUrl http://example.com
 ```
+
+The --baseUrl option is mandatory. It enables you to run tests against many environments (localhost support coming soon!).
 
 And testfile.js would have (check [here](https://cabbiejs.org/api/classes/activewindow/))):
 
