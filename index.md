@@ -23,6 +23,8 @@ Your tests are going to be really simple to write and also run extremely fast. Y
 
 It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's free for now and when we consider we have the critical mass of users, you'll be able to use it on a pay-what-you-use basis.
 
+## How to run
+
 To use, first [*login* or *sign up* here](https://fasttest.auth.eu-west-1.amazoncognito.com/login?response_type=code&client_id=60uit0kj2hdie09n13v6fpiqd9&redirect_uri=https://938jss4tqd.execute-api.eu-west-1.amazonaws.com/prod/login/), then just run:
 
 ```bash
@@ -31,7 +33,7 @@ $ fasttest login --username <user> --password <pass>
 $ fasttest testfile.js
 ```
 
-And testfile.js would have:
+And testfile.js would have (check [here](https://cabbiejs.org/api/classes/activewindow/))):
 
 ```js
 module.exports = {
@@ -46,6 +48,12 @@ module.exports = {
 ```
 
 Notice that you don't have to type "async". This is not an accident. fasttest.io turns your code into async code automatically, so you can focus on making good tests.
+
+## Documentation
+
+The documentation for fasttest is this website for now.
+
+[Check the docs for `wind` here.](https://cabbiejs.org/api/classes/activewindow/)
 
 <hr>
 
