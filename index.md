@@ -29,7 +29,7 @@ It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's fr
 
 Check out the demo below:
 
-<iframe style="padding-bottom: 2em" width="560" height="315" src="https://www.youtube.com/embed/kv7WJKZwmBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="padding-bottom: 2em; height: auto; max-width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/kv7WJKZwmBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How to run
 
