@@ -27,6 +27,16 @@ Your tests are going to be really simple to write and also run extremely fast. Y
 
 It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's free for now and when we consider we have the critical mass of users, you'll be able to use it on a pay-what-you-use basis.
 
+## Comparison to other selenium-based cloud testing providers
+
+This is set apart from services like Saucelabs or BrowserStack because, as it runs on AWS Lambda, it's incredibly cheap. Additionally, the tests run in the same machine as the browser that's running them, so there's no extra hop between the test code and your server.
+
+    We're going to add a benchmark here to show how tests are easier to write and faster too!
+
+It's also a lot easier to point a fasttest test suite to any environments you might be running (staging, production, (local coming soon)) than other competitors, through the simple command line argument --baseUrl.
+
+In the future, when we have more than one browser, it will be trivial to do matrix testing, where you test against many browsers, by way of new arguments in our CLI.
+
 ## Demo
 
 Check out the demo below:
