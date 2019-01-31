@@ -17,8 +17,6 @@ title: fasttest.io
 
 <hr>
 
-<p style="background: red">fasttest is down as we're working on security issues</p>
-
 ## What it is
 
 fasttest.io is your ticket to faster, easier to write and cheaper functional tests. Run your tests in our JSDOM based browser. They are run in series so you can use the result from the previous test in the next one.
@@ -78,4 +76,3 @@ The documentation for fasttest is this website for now.
 [Check the docs for `wind` here.](https://cabbiejs.org/api/classes/activewindow/)
 
 <hr>
-
