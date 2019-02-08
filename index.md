@@ -21,7 +21,7 @@ title: fasttest.io
 
 ## What it is
 
-fasttest.io is your ticket to faster, easier to write and cheaper functional tests. Run your tests in our JSDOM based browser. They are run in series so you can use the result from the previous test in the next one.
+fasttest.io is your ticket to faster, easier to write and cheaper functional tests. They run in the server instead of your machine, so they're closer to the browser that runs them. They are run in series so you can use the result from the previous test in the next one.
 
 Your tests are going to be really simple to write and also run extremely fast. You get to choose what region you want to run your tests from. (coming soon)
 
@@ -50,15 +50,13 @@ Check out the demo below:
 ```bash
 npm install fasttest -g
 fasttest testfile.js --base-url http://example.com
-# or, for chrome:
-fasttest testfile.js --base-url http://example.com --browser chrome
 ```
 
 The `--base-url` option is mandatory. It enables you to run tests against many environments (localhost support coming soon!). So to test your real production site you would put `http://yourprodapp.com`, and the same for other environments.
 
 If you can't use `--base-url`, get a new version of fasttest. We're always fixing bugs and changing things!
 
-You can also pass `--browser` to set the browser to `chrome`. The default is `jsdom`
+<!-- You can also pass a `browser` option to set the browser to `jsdom`. The default is `chrome` -->
 
 And testfile.js would have the following (check [here](https://cabbiejs.org/api/classes/activewindow/) for `wind` documentation)):
 
