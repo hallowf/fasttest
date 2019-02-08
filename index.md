@@ -3,8 +3,6 @@ layout: default
 title: fasttest.io
 ---
 
-<div style="height:2em"></div>
-
 <style>
 @media screen and (max-width: 800px) {
     #title {
@@ -14,6 +12,10 @@ title: fasttest.io
 </style>
 
 <h1 id="title" style="text-align: center; font-size: 6em">fasttest.io</h1>
+
+<!-- <p style="background: red; color: white; font-weight: bold; font-size: 1.5em; text-align: center; padding: 1em;">
+    fasttest is down at this moment
+</p> -->
 
 <hr>
 
@@ -31,7 +33,7 @@ This is set apart from services like Saucelabs or BrowserStack because, as it ru
 
     We're going to add a benchmark here to show how tests are easier to write and faster too!
 
-It's also a lot easier to point a fasttest test suite to any environments you might be running (staging, production, (local coming soon)) than other competitors, through the simple command line argument --baseUrl.
+It's also a lot easier to point a fasttest test suite to any environments you might be running (staging, production) than other competitors, through the simple command line argument `--base-url`. Local environments aren't done yet but they will be very nice. You won't need to use something like sauceconnect to create a tunnel, we'll create the tunnel for you and connect you to the test without any intervention.
 
 In the future, when we have more than one browser, it will be trivial to do matrix testing, where you test against many browsers, by way of new arguments in our CLI.
 
@@ -39,21 +41,26 @@ In the future, when we have more than one browser, it will be trivial to do matr
 
 Check out the demo below:
 
-<iframe style="padding-bottom: 2em; height: auto; max-width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/kv7WJKZwmBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="padding-bottom: 2em; height: auto; max-width: 100%; min-height: 300px" width="560" height="315" src="https://www.youtube.com/embed/kv7WJKZwmBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How to run
 
-To use, first [*login* or *sign up* here](https://fasttest.auth.eu-west-1.amazoncognito.com/login?response_type=code&client_id=60uit0kj2hdie09n13v6fpiqd9&redirect_uri=https://938jss4tqd.execute-api.eu-west-1.amazonaws.com/prod/login/), then just run:
+<!-- To use, first [*login* or *sign up* here](https://fasttest.auth.eu-west-1.amazoncognito.com/login?response_type=code&client_id=60uit0kj2hdie09n13v6fpiqd9&redirect_uri=https://938jss4tqd.execute-api.eu-west-1.amazonaws.com/prod/login/), then just run: -->
 
 ```bash
-$ npm install fasttest -g
-$ fasttest login --username <user> --password <pass>
-$ fasttest testfile.js --baseUrl http://example.com
+npm install fasttest -g
+fasttest testfile.js --base-url http://example.com
+# or, for chrome:
+fasttest testfile.js --base-url http://example.com --browser chrome
 ```
 
-The --baseUrl option is mandatory. It enables you to run tests against many environments (localhost support coming soon!).
+The `--base-url` option is mandatory. It enables you to run tests against many environments (localhost support coming soon!). So to test your real production site you would put `http://yourprodapp.com`, and the same for other environments.
 
-And testfile.js would have (check [here](https://cabbiejs.org/api/classes/activewindow/))):
+If you can't use `--base-url`, get a new version of fasttest. We're always fixing bugs and changing things!
+
+You can also pass `--browser` to set the browser to `chrome`. The default is `jsdom`
+
+And testfile.js would have the following (check [here](https://cabbiejs.org/api/classes/activewindow/) for `wind` documentation)):
 
 ```js
 module.exports = {
@@ -75,4 +82,3 @@ The documentation for fasttest is this website for now.
 
 [Check the docs for `wind` here.](https://cabbiejs.org/api/classes/activewindow/)
 
-<hr>
