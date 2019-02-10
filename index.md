@@ -23,7 +23,9 @@ title: fasttest.io
 
 fasttest.io is your ticket to faster, easier to write and cheaper functional tests. They run in the server instead of your machine, so they're closer to the browser that runs them. They are run in series so you can use the result from the previous test in the next one.
 
-Your tests are going to be really simple to write and also run extremely fast. You get to choose what region you want to run your tests from. (coming soon)
+Your tests are going to be really simple to write and also run extremely fast.
+
+<!-- You get to choose what region you want to run your tests from. (coming soon) -->
 
 It was launched in January 26 of 2019, so it's pretty bleeding edge too. It's free for now and when we consider we have the critical mass of users, you'll be able to use it on a pay-what-you-use basis.
 
@@ -52,9 +54,7 @@ npm install fasttest -g
 fasttest testfile.js --base-url http://example.com
 ```
 
-The `--base-url` option is mandatory. It enables you to run tests against many environments (localhost support coming soon!). So to test your real production site you would put `http://yourprodapp.com`, and the same for other environments.
-
-If you can't use `--base-url`, get a new version of fasttest. We're always fixing bugs and changing things!
+The `--base-url` option is mandatory. It enables you to run tests against many environments (localhost support coming soon!). So to test your real production site you would put `http://yourprodapp.com`, and for staging you would put `http://yourstagingapp.com`, wherever your staging is. You can also add `/path/to/staging` if that's where you deployed staging.
 
 <!-- You can also pass a `browser` option to set the browser to `jsdom`. The default is `chrome` -->
 
