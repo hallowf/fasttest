@@ -13,9 +13,9 @@ title: fasttest.io
 
 <h1 id="title" style="text-align: center; font-size: 6em">fasttest.io</h1>
 
-<!-- <p style="background: red; color: white; font-weight: bold; font-size: 1.5em; text-align: center; padding: 1em;">
+<p style="background: red; color: white; font-weight: bold; font-size: 1.5em; text-align: center; padding: 1em;">
     fasttest is down at this moment
-</p> -->
+</p>
 
 <hr>
 
